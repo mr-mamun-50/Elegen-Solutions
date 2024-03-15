@@ -75,20 +75,20 @@ export default function Home(props) {
                 {props.auth.user ? (
                   <Link href={route('dashboard')}
                     className="flex items-center text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200">
-                    <UserIcon className="w-5 h-5 me-2" aria-hidden="true" />
+                    <UserIcon className="w-5 h-5 me-1" aria-hidden="true" />
                     {props.auth.user.name}
                   </Link>
                 ) : (
                   <>
                     <Link href={route('login')}
                       className="flex items-center text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200">
-                      <ArrowRightEndOnRectangleIcon className="w-5 h-5 me-2" aria-hidden="true" />
+                      <ArrowRightEndOnRectangleIcon className="w-5 h-5 me-1" aria-hidden="true" />
                       Log in
                     </Link>
 
                     <Link href={route('register')}
                       className="flex items-center ml-6 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200">
-                      <UserPlusIcon className="w-5 h-5 me-2" aria-hidden="true" />
+                      <UserPlusIcon className="w-5 h-5 me-1" aria-hidden="true" />
                       Sign Up
                     </Link>
                   </>
